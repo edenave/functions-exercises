@@ -54,7 +54,18 @@ for ( let i = 1 ; i <= n ; i++){
 //Question 5
 function getFirstNotRepeating(str) {
   // your code here
-  return "";
+  let char = str.split("");
+  let char1;
+
+for(let i = 0 ; i <=char.length; ++i){
+  if(char.indexOf(char[i]) === char.lastIndexOf(char[i])) {
+     char1 = char[i];
+
+     return char1;
+    }
+
+  }
+  
 }
 
 //Question 6 (Bonus)
@@ -65,7 +76,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-console.log(myPower(4, 4));
+console.log(getFirstNotRepeating("asdfasdfwweqrtg"));
 // *** End of Playground ***
 
 // Don't touch me :)
