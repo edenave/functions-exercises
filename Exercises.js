@@ -14,7 +14,15 @@
 function allCombinations(str) {
   let combinations = [];
   // your code here
+  
+  combinations = new Array();
+    for(i=0;i<str.length;i++) {
+        for(j=i+1;j<str.length+1;j++) {
+          combinations.push(str.slice(i, j));
+        }
+    }
 
+ 
   //
   return combinations;
 }
@@ -45,7 +53,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-
+console.log(myReverse("sunshine"));
 // *** End of Playground ***
 
 // Don't touch me :)
