@@ -42,7 +42,13 @@ capitalizedArr = array.join(" ");
 //Question 4
 function myPower(x, n) {
   // your code here
-  return "";
+  let result = 1;
+for ( let i = 1 ; i <= n ; i++){
+  result = x * result;
+
+   
+  }
+  return result;
 }
 
 //Question 5
@@ -59,7 +65,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-console.log(allCaps("hellp darkness my old friend"));
+console.log(myPower(4, 4));
 // *** End of Playground ***
 
 // Don't touch me :)
