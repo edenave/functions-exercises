@@ -70,13 +70,25 @@ for(let i = 0 ; i <=char.length; ++i){
 
 //Question 6 (Bonus)
 function isPrefectNumber(num) {
+
   // your code here
-  return "I'm not interested in the bonus question :(";
+  let num1 = 0;
+  for (let i = 1; i <= num/2 ; i++) {
+    if(num % i === 0) {
+      num1 = num1 + i;
+    }
+  }
+    if (num1 === num && num1 !== 0){
+    return true;
+  } else {
+  return false;
+}
+
 }
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-console.log(getFirstNotRepeating("asdfasdfwweqrtg"));
+
 // *** End of Playground ***
 
 // Don't touch me :)
