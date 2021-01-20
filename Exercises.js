@@ -30,7 +30,13 @@ function allCombinations(str) {
 //Question 3
 function allCaps(str) {
   // your code here
-  return "";
+  let array = str.split(" ");
+  let capitalizedArr = [];
+for(let i = 0 ; i < array.length; i++){
+  array[i] = array[i][0].toUpperCase() + array[i].substr(1);
+}
+capitalizedArr = array.join(" ");
+  return capitalizedArr;
 }
 
 //Question 4
@@ -53,7 +59,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-console.log(myReverse("sunshine"));
+console.log(allCaps("hellp darkness my old friend"));
 // *** End of Playground ***
 
 // Don't touch me :)
